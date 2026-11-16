@@ -1,5 +1,4 @@
-# Kubernetes blueprint for the Invoice Cloud Demo.
-# Before applying, replace DOCKERHUB_USERNAME and YOUR-BUCKET-NAME below.
+# Kubernetes blueprint for the Invoice Cloud Demo
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -40,8 +39,6 @@ spec:
             - name: invoice-folder
               mountPath: /app/invoice
       volumes:
-        # The invoice folder lives on the EC2 server at /home/ubuntu/invoice,
-        # so you can open it with `ls ~/invoice` while the app runs.
         - name: invoice-folder
           hostPath:
             path: /home/ubuntu/invoice
