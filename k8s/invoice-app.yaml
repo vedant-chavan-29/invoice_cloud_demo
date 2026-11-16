@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: invoice-app
-          image: vedantkc/invoice-app:v1
+          image: vedantkc/invoice-app:v2
           ports:
             - containerPort: 5000
           env:
@@ -24,7 +24,7 @@ spec:
             - name: AWS_REGION
               value: "ap-south-1"
             - name: APP_VERSION
-              value: "v1"
+              value: "v2"
           resources:
             requests:
               memory: "64Mi"

@@ -83,6 +83,16 @@
           >Customer email
           <input name="email" type="email" value="student@example.com"
         /></label>
+        <label>Customer phone</label>
+        <input
+          type="text"
+          name="phone"
+          pattern="\d{10}"
+          maxlength="10"
+          minlength="10"
+          required
+          placeholder="9876543210"
+        />
         <label
           >Item <input name="item" value="Cloud Computing Textbook" required
         /></label>
